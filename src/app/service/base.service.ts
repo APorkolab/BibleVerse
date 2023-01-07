@@ -68,32 +68,42 @@ export class BaseService {
   }
 
   getRandomVerse(): Observable<Verse> {
-    let randomItem = this.allBook[Math.floor(Math.random() * this.allBook.length)];
-    let randomChapter = Math.floor((Math.random() * randomItem.totalChapterNumber) + 1);
-    let randomVerse = randomItem.chapterVersesNumber.map(obj => ({
-      key: `${obj.num}`, value: `${obj.total}`
-    }));
-    let totalVerseInThisChapter = randomVerse.find(el => randomChapter === Number(el.key) || 1);
-    console.log(totalVerseInThisChapter);
+    // Előzetes betöltés
+    const allBook = this.allBook;
+    const apiUrl = this.apiUrl;
 
+    // Változók előzetes betöltése
+    const randomItem = allBook[Math.floor(Math.random() * allBook.length)];
+    const randomChapter = Math.floor((Math.random() * randomItem.totalChapterNumber) + 1);
+    const totalVerseInThisChapter = randomItem.chapterVersesNumber[randomChapter - 1]?.total;
 
-    let firstVerse = Math.floor((Math.random() * Number(totalVerseInThisChapter?.value)) + 1);
-    let lastVerse = 0;
-    do {
-      lastVerse = Math.floor((Math.random() * Number(totalVerseInThisChapter?.value)) + 1);
-    } while (lastVerse < firstVerse);
+    // Változók előzetes beállítása
+    let firstVerse = Math.floor((Math.random() * totalVerseInThisChapter) + 1);
+    let lastVerse = firstVerse;
 
-    return this.http.get<Verse>(`${this.apiUrl}/${randomItem.bookName}${randomChapter},${firstVerse}-${randomChapter}.${lastVerse}`)
+    // While ciklus használata
+    while (lastVerse <= firstVerse) {
+      lastVerse = Math.floor((Math.random() * totalVerseInThisChapter) + 1);
+    }
 
+    // HTTP hívás
+    return this.http.get<Verse>(`${apiUrl}/${randomItem.bookName}${randomChapter},${firstVerse}-${randomChapter}.${lastVerse}`)
   }
 
   getSearchedVerses(word: string): Observable<Verse> {
-    return this.http.get<Verse>(`${this.apiUrl}/${word}`);
+    return this.http.get<Verse>(`https://szentiras.hu/api/search/${word}`);
   }
 
-  getSelectedVerses(book: string | number, fromChapter: string | number, fromVerse: string | number, toChapter: string | number, toVerse: string | number): Observable<Verse> {
-    return this.http.get<Verse>(`${this.apiUrl}/${book}${fromChapter},${fromVerse}-${toChapter}.${toChapter}`);
+  getSelectedVerses(book: string | number, fromChapter: string | number, fromVerse: string | number, toChapter?: string | number, toVerse?: string | number): Observable<Verse> {
+    let query = `${this.apiUrl}/${book}${fromChapter},${fromVerse}`;
+
+    if (toChapter && toVerse) {
+      query += `-${toChapter},${toChapter}`;
+    }
+
+    return this.http.get<Verse>(query);
   }
+
 
 
   // A program elvileg képes lenne teljes mértékben, közvetlenül kezelni az adatbázis CRUD műveleteit. Jelenleg csupán a lekérést használjuk.
