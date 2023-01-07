@@ -84,25 +84,24 @@
 					<option value="Jel">János jelenései</option>
 				</select>
 				<br><br>
-				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-				<label for="vehicle1"> Több vers</label>
+				<input type="checkbox" [(ngModel)]="showInputs"> Több vers
 				<br><br>
 			<table>
 				<tbody>
 					<tr>
-						<td><label for="fname">Fejezet száma (több vers esetén a kezdet):</label>
-							<input type="number" id="fname" name="fname">
+						<td><label for="fromChapter">Fejezet száma (több vers esetén a kezdet):</label>
+							<input type="number" id="fromChapter" name="fromChapter">
 						</td>
-						<td><label for="fname">Vers száma (több vers esetén a kezdet):</label>
-							<input type="number" id="fname" name="fname">
+						<td><label for="fromVerse">Vers száma (több vers esetén a kezdet):</label>
+							<input type="number" id="fromVerse" name="fromVerse">
 						</td>
 					</tr>
 					<tr>
-						<td><label for="fname">Fejezet száma (több vers esetén a vég):</label>
-							<input type="number" id="fname" name="fname">
+						<td><label for="toChapter" *ngIf="showInputs">Fejezet száma (több vers esetén a vég):</label>
+							<input *ngIf="showInputs" type="number" id="toChapter" name="toChapter">
 						</td>
-						<td><label for="fname">Vers száma (több vers esetén a vég):</label>
-							<input type="number" id="fname" name="fname">
+						<td><label for="toVerse" *ngIf="showInputs">Vers száma (több vers esetén a vég):</label>
+							<input *ngIf="showInputs" type="number" id="toVerse" name="toVerse">
 						</td>
 					</tr>
 				</tbody>

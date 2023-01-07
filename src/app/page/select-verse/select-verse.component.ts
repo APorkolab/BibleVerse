@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-select-verse',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./select-verse.component.scss']
 })
 export class SelectVerseComponent {
-
+  showInputs = false;
 }

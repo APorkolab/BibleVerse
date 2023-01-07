@@ -8,6 +8,8 @@ import { RandomVerseComponent } from './page/random-verse/random-verse.component
 import { SelectVerseComponent } from './page/select-verse/select-verse.component';
 import { SearchVerseComponent } from './page/search-verse/search-verse.component';
 import { ContactComponent } from './page/contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ContactComponent } from './page/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
