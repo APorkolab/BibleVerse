@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bibleverse';
+  @ViewChild('bgVideo') bgVideo!: HTMLVideoElement;
+
+  ngOnInit() {
+    console.log(this.bgVideo);
+  }
+
+  toggleVideo(vid: HTMLMediaElement) {
+    if (vid.paused == true) {
+      vid.play();
+    } else {
+      vid.pause();
+    }
+  }
 }

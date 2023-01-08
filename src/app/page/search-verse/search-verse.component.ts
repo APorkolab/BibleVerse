@@ -33,6 +33,9 @@ export class SearchVerseComponent implements OnInit {
       error: (e) => console.error(e),
     });
   }
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 
 
 }

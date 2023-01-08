@@ -3,12 +3,6 @@
 		<div class="page-width-1 page-left">
 			<div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
 				<div class="tm-bg-dark content-pad">
-
-
-
-
-					<!-- <li data-page-no="3" class="px-3">
-	<div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom"> -->
 					<div class="circle intro-circle-1"></div>
 					<div class="circle intro-circle-2"></div>
 					<div class="circle intro-circle-3"></div>
@@ -17,7 +11,8 @@
 						<h2 class="mb-4">Válassz ki egy igehelyet, gyorsan</h2>
 						<p class="mb-4">
 
-							<select [(ngModel)]="selectedBook" name="book">
+							<select [(ngModel)]="selectedBook" name="book" class="form-control rounded-0 border-top-0
+								border-end-0 border-start-0">
 								<option *ngFor="let b of books" [value]="b.value">{{ b.display }}</option>
 							</select>
 							<br><br>
@@ -27,18 +22,22 @@
 							<tbody>
 								<tr>
 									<td><label for="fromChapter">Fejezet száma (több vers esetén a kezdet):</label>
-										<input type="number" id="fromChapter" name="fromChapter" [(ngModel)]="fromChapter">
+										<input type="number" id="fromChapter" name="fromChapter" [(ngModel)]="fromChapter"
+											class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
 									</td>
 									<td><label for="fromVerse">Vers száma (több vers esetén a kezdet):</label>
-										<input type="number" id="fromVerse" name="fromVerse" [(ngModel)]="fromVerse">
+										<input type="number" id="fromVerse" name="fromVerse" [(ngModel)]="fromVerse"
+											class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
 									</td>
 								</tr>
 								<tr *ngIf="showInputs">
 									<td><label for="toChapter">Fejezet száma (több vers esetén a vég):</label>
-										<input type="number" id="toChapter" name="toChapter" [(ngModel)]="toChapter">
+										<input type="number" id="toChapter" name="toChapter" [(ngModel)]="toChapter"
+											class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
 									</td>
 									<td><label for="toVerse">Vers száma (több vers esetén a vég):</label>
-										<input type="number" id="toVerse" name="toVerse" [(ngModel)]="toVerse">
+										<input type="number" id="toVerse" name="toVerse" [(ngModel)]="toVerse"
+											class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
 									</td>
 								</tr>
 							</tbody>
@@ -46,7 +45,8 @@
 
 						<br><br>
 
-						<button (click)="getSelectedVerses(selectedBook, fromChapter, fromVerse, toChapter, toVerse)">Válassz
+						<button (click)="getSelectedVerses(selectedBook, fromChapter, fromVerse, toChapter, toVerse)"
+							class="btn btn-dark">Válassz
 							igehelyet</button>
 
 						<br><br>

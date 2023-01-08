@@ -1,9 +1,9 @@
 [
   {
-    "bookName": "",
+    "bookName": "Ter",
     "totalChapterNumber": 50,
     "book": "Genesis",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "31"
@@ -207,9 +207,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Kiv",
+    "totalChapterNumber": 40,
     "book": "Exodus",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "22"
@@ -373,9 +374,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Lev",
+    "totalChapterNumber": 27,
     "book": "Leviticus",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "17"
@@ -487,9 +489,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Szám",
+    "totalChapterNumber": 36,
     "book": "Numbers",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "54"
@@ -637,9 +640,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "MTörv",
+    "totalChapterNumber": 34,
     "book": "Deuteronomy",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "46"
@@ -779,9 +783,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Józs",
+    "totalChapterNumber": 24,
     "book": "Joshua",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "18"
@@ -881,9 +886,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Bír",
+    "totalChapterNumber": 21,
     "book": "Judges",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "36"
@@ -971,9 +977,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Rút",
+    "totalChapterNumber": 4,
     "book": "Ruth",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "22"
@@ -993,9 +1000,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Sám",
+    "totalChapterNumber": 31,
     "book": "1 Samuel",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "28"
@@ -1123,9 +1131,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Sám",
+    "totalChapterNumber": 24,
     "book": "2 Samuel",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "27"
@@ -1225,9 +1234,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Kir",
+    "totalChapterNumber": 22,
     "book": "1 Kings",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "53"
@@ -1319,9 +1329,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Kir",
+    "totalChapterNumber": 25,
     "book": "2 Kings",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "18"
@@ -1425,9 +1436,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Krón",
+    "totalChapterNumber": 29,
     "book": "1 Chronicles",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "54"
@@ -1547,9 +1559,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Krón",
+    "totalChapterNumber": 36,
     "book": "2 Chronicles",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "17"
@@ -1697,9 +1710,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Ezdr",
+    "totalChapterNumber": 10,
     "book": "Ezra",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "11"
@@ -1743,9 +1757,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Neh",
+    "totalChapterNumber": 13,
     "book": "Nehemiah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "11"
@@ -1801,9 +1816,144 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Tób",
+    "totalChapterNumber": 14,
+    "book": "Tobias",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "22"
+      },
+      {
+        "num": "2",
+        "total": "14"
+      },
+      {
+        "num": "3",
+        "total": "17"
+      },
+      {
+        "num": "4",
+        "total": "21"
+      },
+      {
+        "num": "5",
+        "total": "22"
+      },
+      {
+        "num": "6",
+        "total": "18"
+      },
+      {
+        "num": "7",
+        "total": "16"
+      },
+      {
+        "num": "8",
+        "total": "21"
+      },
+      {
+        "num": "9",
+        "total": "6"
+      },
+      {
+        "num": "10",
+        "total": "13"
+      },
+      {
+        "num": "11",
+        "total": "18"
+      },
+      {
+        "num": "12",
+        "total": "22"
+      },
+      {
+        "num": "13",
+        "total": "18"
+      },
+      {
+        "num": "14",
+        "total": "15"
+      }
+    ]
+  },
+  {
+    "bookName": "Judit",
+    "totalChapterNumber": 16,
+    "book": "Judith",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "16"
+      },
+      {
+        "num": "2",
+        "total": "28"
+      },
+      {
+        "num": "3",
+        "total": "10"
+      },
+      {
+        "num": "4",
+        "total": "15"
+      },
+      {
+        "num": "5",
+        "total": "24"
+      },
+      {
+        "num": "6",
+        "total": "21"
+      },
+      {
+        "num": "7",
+        "total": "32"
+      },
+      {
+        "num": "8",
+        "total": "36"
+      },
+      {
+        "num": "9",
+        "total": "14"
+      },
+      {
+        "num": "10",
+        "total": "23"
+      },
+      {
+        "num": "11",
+        "total": "23"
+      },
+      {
+        "num": "12",
+        "total": "20"
+      },
+      {
+        "num": "13",
+        "total": "20"
+      },
+      {
+        "num": "14",
+        "total": "19"
+      },
+      {
+        "num": "15",
+        "total": "14"
+      },
+      {
+        "num": "16",
+        "total": "25"
+      }
+    ]
+  },
+  {
+    "bookName": "Eszt",
+    "totalChapterNumber": 10,
     "book": "Esther",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "22"
@@ -1847,9 +1997,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jób",
+    "totalChapterNumber": 42,
     "book": "Job",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "22"
@@ -2021,9 +2172,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Zsolt",
+    "totalChapterNumber": 150,
     "book": "Psalm",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "6"
@@ -2627,9 +2779,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Péld",
+    "totalChapterNumber": 31,
     "book": "Proverbs",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "33"
@@ -2757,9 +2910,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Préd",
+    "totalChapterNumber": 12,
     "book": "Ecclesiastes",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "18"
@@ -2811,9 +2965,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Én",
+    "totalChapterNumber": 8,
     "book": "Song of Solomon",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "17"
@@ -2849,9 +3004,304 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Bölcs",
+    "totalChapterNumber": 19,
+    "book": "",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "16"
+      },
+      {
+        "num": "2",
+        "total": "24"
+      },
+      {
+        "num": "3",
+        "total": "19"
+      },
+      {
+        "num": "4",
+        "total": "20"
+      },
+      {
+        "num": "5",
+        "total": "23"
+      },
+      {
+        "num": "6",
+        "total": "25"
+      },
+      {
+        "num": "7",
+        "total": "30"
+      },
+      {
+        "num": "8",
+        "total": "21"
+      },
+      {
+        "num": "9",
+        "total": "18"
+      },
+      {
+        "num": "10",
+        "total": "21"
+      },
+      {
+        "num": "11",
+        "total": "27"
+      },
+      {
+        "num": "12",
+        "total": "27"
+      },
+      {
+        "num": "13",
+        "total": "19"
+      },
+      {
+        "num": "14",
+        "total": "31"
+      },
+      {
+        "num": "15",
+        "total": "19"
+      },
+      {
+        "num": "16",
+        "total": "29"
+      },
+      {
+        "num": "17",
+        "total": "20"
+      },
+      {
+        "num": "18",
+        "total": "25"
+      },
+      {
+        "num": "19",
+        "total": "22"
+      }
+    ]
+  },
+  {
+    "bookName": "Sír",
+    "totalChapterNumber": 51,
+    "book": "",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "40"
+      },
+      {
+        "num": "2",
+        "total": "23"
+      },
+      {
+        "num": "3",
+        "total": "34"
+      },
+      {
+        "num": "4",
+        "total": "36"
+      },
+      {
+        "num": "5",
+        "total": "18"
+      },
+      {
+        "num": "6",
+        "total": "37"
+      },
+      {
+        "num": "7",
+        "total": "40"
+      },
+      {
+        "num": "8",
+        "total": "22"
+      },
+      {
+        "num": "9",
+        "total": "25"
+      },
+      {
+        "num": "10",
+        "total": "34"
+      },
+      {
+        "num": "11",
+        "total": "36"
+      },
+      {
+        "num": "12",
+        "total": "19"
+      },
+      {
+        "num": "13",
+        "total": "32"
+      },
+      {
+        "num": "14",
+        "total": "27"
+      },
+      {
+        "num": "15",
+        "total": "22"
+      },
+      {
+        "num": "16",
+        "total": "31"
+      },
+      {
+        "num": "17",
+        "total": "31"
+      },
+      {
+        "num": "18",
+        "total": "33"
+      },
+      {
+        "num": "19",
+        "total": "28"
+      },
+      {
+        "num": "20",
+        "total": "33"
+      },
+      {
+        "num": "21",
+        "total": "31"
+      },
+      {
+        "num": "22",
+        "total": "33"
+      },
+      {
+        "num": "23",
+        "total": "38"
+      },
+      {
+        "num": "24",
+        "total": "47"
+      },
+      {
+        "num": "25",
+        "total": "36"
+      },
+      {
+        "num": "26",
+        "total": "28"
+      },
+      {
+        "num": "27",
+        "total": "33"
+      },
+      {
+        "num": "28",
+        "total": "30"
+      },
+      {
+        "num": "29",
+        "total": "35"
+      },
+      {
+        "num": "30",
+        "total": "27"
+      },
+      {
+        "num": "31",
+        "total": "42"
+      },
+      {
+        "num": "32",
+        "total": "28"
+      },
+      {
+        "num": "33",
+        "total": "33"
+      },
+      {
+        "num": "34",
+        "total": "31"
+      },
+      {
+        "num": "35",
+        "total": "26"
+      },
+      {
+        "num": "36",
+        "total": "28"
+      },
+      {
+        "num": "37",
+        "total": "34"
+      },
+      {
+        "num": "38",
+        "total": "39"
+      },
+      {
+        "num": "39",
+        "total": "41"
+      },
+      {
+        "num": "40",
+        "total": "32"
+      },
+      {
+        "num": "41",
+        "total": "28"
+      },
+      {
+        "num": "42",
+        "total": "26"
+      },
+      {
+        "num": "43",
+        "total": "37"
+      },
+      {
+        "num": "44",
+        "total": "27"
+      },
+      {
+        "num": "45",
+        "total": "31"
+      },
+      {
+        "num": "46",
+        "total": "23"
+      },
+      {
+        "num": "47",
+        "total": "31"
+      },
+      {
+        "num": "48",
+        "total": "28"
+      },
+      {
+        "num": "49",
+        "total": "19"
+      },
+      {
+        "num": "50",
+        "total": "31"
+      },
+      {
+        "num": "51",
+        "total": "38"
+      }
+    ]
+  },
+  {
+    "bookName": "Iz",
+    "totalChapterNumber": 66,
     "book": "Isaiah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "31"
@@ -3119,9 +3569,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jer",
+    "totalChapterNumber": 52,
     "book": "Jeremiah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "19"
@@ -3333,9 +3784,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Siralm",
+    "totalChapterNumber": 5,
     "book": "Lamentations",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "22"
@@ -3359,9 +3811,41 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Bár",
+    "totalChapterNumber": 6,
+    "book": "Barruk",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "22"
+      },
+      {
+        "num": "2",
+        "total": "35"
+      },
+      {
+        "num": "3",
+        "total": "38"
+      },
+      {
+        "num": "4",
+        "total": "37"
+      },
+      {
+        "num": "5",
+        "total": "9"
+      },
+      {
+        "num": "6",
+        "total": "72"
+      }
+    ]
+  },
+  {
+    "bookName": "Ez",
+    "totalChapterNumber": 48,
     "book": "Ezekiel",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "28"
@@ -3557,9 +4041,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Dán",
+    "totalChapterNumber": 14,
     "book": "Daniel",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "21"
@@ -3611,9 +4096,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Óz",
+    "totalChapterNumber": 14,
     "book": "Hosea",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "11"
@@ -3673,9 +4159,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jo",
+    "totalChapterNumber": 4,
     "book": "Joel",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "20"
@@ -3691,9 +4178,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Ám",
+    "totalChapterNumber": 9,
     "book": "Amos",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "15"
@@ -3733,9 +4221,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Abd",
+    "totalChapterNumber": 1,
     "book": "Obadiah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "21"
@@ -3743,9 +4232,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jón",
+    "totalChapterNumber": 4,
     "book": "Jonah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "17"
@@ -3765,9 +4255,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Mik",
+    "totalChapterNumber": 7,
     "book": "Micah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "16"
@@ -3799,9 +4290,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Náh",
+    "totalChapterNumber": 3,
     "book": "Nahum",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "15"
@@ -3817,9 +4309,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Hab",
+    "totalChapterNumber": 3,
     "book": "Habakkuk",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "17"
@@ -3835,9 +4328,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Szof",
+    "totalChapterNumber": 3,
     "book": "Zephaniah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "18"
@@ -3853,9 +4347,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Agg",
+    "totalChapterNumber": 2,
     "book": "Haggai",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "15"
@@ -3867,9 +4362,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Zak",
+    "totalChapterNumber": 14,
     "book": "Zechariah",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "21"
@@ -3929,9 +4425,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Mal",
+    "totalChapterNumber": 3,
     "book": "Malachi",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "14"
@@ -3943,17 +4440,152 @@
       {
         "num": "3",
         "total": "18"
-      },
-      {
-        "num": "4",
-        "total": "6"
       }
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Makk",
+    "totalChapterNumber": 16,
+    "book": "",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "64"
+      },
+      {
+        "num": "2",
+        "total": "70"
+      },
+      {
+        "num": "3",
+        "total": "60"
+      },
+      {
+        "num": "4",
+        "total": "61"
+      },
+      {
+        "num": "5",
+        "total": "68"
+      },
+      {
+        "num": "6",
+        "total": "63"
+      },
+      {
+        "num": "7",
+        "total": "50"
+      },
+      {
+        "num": "8",
+        "total": "32"
+      },
+      {
+        "num": "9",
+        "total": "73"
+      },
+      {
+        "num": "10",
+        "total": "89"
+      },
+      {
+        "num": "11",
+        "total": "74"
+      },
+      {
+        "num": "12",
+        "total": "54"
+      },
+      {
+        "num": "13",
+        "total": "54"
+      },
+      {
+        "num": "14",
+        "total": "49"
+      },
+      {
+        "num": "15",
+        "total": "41"
+      },
+      {
+        "num": "16",
+        "total": "24"
+      }
+    ]
+  },
+  {
+    "bookName": "2Makk",
+    "totalChapterNumber": 15,
+    "book": "",
+    "chapterVersesNumber": [
+      {
+        "num": "1",
+        "total": "36"
+      },
+      {
+        "num": "2",
+        "total": "32"
+      },
+      {
+        "num": "3",
+        "total": "40"
+      },
+      {
+        "num": "4",
+        "total": "50"
+      },
+      {
+        "num": "5",
+        "total": "27"
+      },
+      {
+        "num": "6",
+        "total": "31"
+      },
+      {
+        "num": "7",
+        "total": "42"
+      },
+      {
+        "num": "8",
+        "total": "36"
+      },
+      {
+        "num": "9",
+        "total": "29"
+      },
+      {
+        "num": "10",
+        "total": "38"
+      },
+      {
+        "num": "11",
+        "total": "38"
+      },
+      {
+        "num": "12",
+        "total": "46"
+      },
+      {
+        "num": "13",
+        "total": "26"
+      },
+      {
+        "num": "14",
+        "total": "46"
+      },
+      {
+        "num": "15",
+        "total": "39"
+      }
+    ]
+  },
+  {
+    "bookName": "Mt",
+    "totalChapterNumber": 28,
     "book": "Matthew",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "25"
@@ -4069,9 +4701,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Mk",
+    "totalChapterNumber": 16,
     "book": "Mark",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "45"
@@ -4139,9 +4772,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Lk",
+    "totalChapterNumber": 24,
     "book": "Luke",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "80"
@@ -4241,9 +4875,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jn",
+    "totalChapterNumber": 21,
     "book": "John",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "51"
@@ -4331,9 +4966,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Csel",
+    "totalChapterNumber": 28,
     "book": "Acts",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "26"
@@ -4449,9 +5085,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Róm",
+    "totalChapterNumber": 16,
     "book": "Romans",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "32"
@@ -4519,9 +5156,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Kor",
+    "totalChapterNumber": 16,
     "book": "1 Corinthians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "31"
@@ -4589,9 +5227,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Kor",
+    "totalChapterNumber": 13,
     "book": "2 Corinthians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "24"
@@ -4647,9 +5286,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Gal",
+    "totalChapterNumber": 6,
     "book": "Galatians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "24"
@@ -4677,9 +5317,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Ef",
+    "totalChapterNumber": 6,
     "book": "Ephesians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "23"
@@ -4707,9 +5348,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Fil",
+    "totalChapterNumber": 4,
     "book": "Philippians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "30"
@@ -4729,9 +5371,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Kol",
+    "totalChapterNumber": 4,
     "book": "Colossians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "29"
@@ -4751,9 +5394,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Tessz",
+    "totalChapterNumber": 5,
     "book": "1 Thessalonians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "10"
@@ -4777,9 +5421,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Tessz",
+    "totalChapterNumber": 3,
     "book": "2 Thessalonians",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "12"
@@ -4795,9 +5440,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Tim",
+    "totalChapterNumber": 6,
     "book": "1 Timothy",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "20"
@@ -4825,9 +5471,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Tim",
+    "totalChapterNumber": 4,
     "book": "2 Timothy",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "18"
@@ -4847,9 +5494,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Tít",
+    "totalChapterNumber": 3,
     "book": "Titus",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "16"
@@ -4865,9 +5513,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Filem",
+    "totalChapterNumber": 1,
     "book": "Philemon",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "25"
@@ -4875,9 +5524,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Zsid",
+    "totalChapterNumber": 13,
     "book": "Hebrews",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "14"
@@ -4933,9 +5583,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jak",
+    "totalChapterNumber": 5,
     "book": "James",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "27"
@@ -4959,9 +5610,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Pét",
+    "totalChapterNumber": 5,
     "book": "1 Peter",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "25"
@@ -4985,9 +5637,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Pét",
+    "totalChapterNumber": 3,
     "book": "2 Peter",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "21"
@@ -5003,9 +5656,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "1Ján",
+    "totalChapterNumber": 5,
     "book": "1 John",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "10"
@@ -5029,9 +5683,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "2Ján",
+    "totalChapterNumber": 1,
     "book": "2 John",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "13"
@@ -5039,19 +5694,21 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "3Ján",
+    "totalChapterNumber": 1,
     "book": "3 John",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
-        "total": "14"
+        "total": "15"
       }
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Júd",
+    "totalChapterNumber": 1,
     "book": "Jude",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "25"
@@ -5059,9 +5716,10 @@
     ]
   },
   {
-    "bookName": "",
+    "bookName": "Jel",
+    "totalChapterNumber": 22,
     "book": "Revelation",
-    "nums": [
+    "chapterVersesNumber": [
       {
         "num": "1",
         "total": "20"

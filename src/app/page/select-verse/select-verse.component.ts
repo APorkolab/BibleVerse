@@ -86,7 +86,7 @@ export class SelectVerseComponent {
     { value: "Júd", display: "Júdás levele" },
     { value: "Jel", display: "János jelenései" },
   ];
-  selectedBook!: string;
+  selectedBook = this.books[0].value;
   fromChapter!: number;
   fromVerse!: number;
   toChapter!: number;
@@ -101,11 +101,11 @@ export class SelectVerseComponent {
   getSelectedVerses(selectedBook: string, fromChapter: number, fromVerse: number, toChapter?: number, toVerse?: number): void {
     this.finalText = '';
     if (toChapter && toChapter < fromChapter) {
-      console.error('toChapter cannot be less than fromChapter');
+      alert('Érvénytelen paraméterek. Kérem ellenőrizze!');
       return;
     }
     if (toChapter === fromChapter && toVerse && toVerse < fromVerse) {
-      console.error('toVerse cannot be less than fromVerse');
+      alert('Érvénytelen paraméterek. Kérem ellenőrizze!');
       return;
     }
     this.baseService.getSelectedVerses(selectedBook, fromChapter, fromVerse, toChapter, toVerse).subscribe({

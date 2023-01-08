@@ -1,3 +1,7 @@
+td {
+  min-width: 100px;
+}
+
 table.striped {
   border-collapse: collapse;
   width: 100%;
@@ -22,4 +26,44 @@ table.striped th,
 table.striped td {
   padding: 12px 15px;
   text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  /* az oszlopokat fejlécbe tömörítjük */
+  table tbody tr td:nth-child(1):before {
+    content: "Könyv: ";
+    font-weight: bold;
+  }
+
+  table tbody tr td:nth-child(2):before {
+    content: "Fordítás: ";
+    font-weight: bold;
+  }
+
+  table tbody tr td:nth-child(3):before {
+    content: "Vers: ";
+    font-weight: bold;
+  }
+
+  table tbody tr td:nth-child(4):before {
+    content: "Fejezet: ";
+    font-weight: bold;
+  }
+}
+
+table tbody tr td:nth-child(5):before {
+  content: "Szöveg: ";
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 767px) {
+  thead {
+    display: none;
+  }
 }
