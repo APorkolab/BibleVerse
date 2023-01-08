@@ -100,15 +100,23 @@ export class SelectVerseComponent {
 
   getSelectedVerses(selectedBook: string, fromChapter: number, fromVerse: number, toChapter?: number, toVerse?: number): void {
     this.finalText = '';
-
+    if (toChapter && toChapter < fromChapter) {
+      console.error('toChapter cannot be less than fromChapter');
+      return;
+    }
+    if (toChapter === fromChapter && toVerse && toVerse < fromVerse) {
+      console.error('toVerse cannot be less than fromVerse');
+      return;
+    }
     this.baseService.getSelectedVerses(selectedBook, fromChapter, fromVerse, toChapter, toVerse).subscribe({
       next: (data: Verse) => {
         // A visszakapott adatokat itt kezeljük (pl. megjelenítjük a felhasználó számára)
         this.finalText = data.text;
       },
-      error: (e) => console.error(e),
+      error: (e) => this.finalText = "Nincs ilyen igehely, kérem válasszon másikat!",
     });
-
+    fromChapter = 0;
+    fromVerse = 0;
     toChapter = 0;
     toVerse = 0;
   }

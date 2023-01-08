@@ -1,44 +1,54 @@
-<li data-page-no="3" class="px-3">
-	<div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
-		<div class="circle intro-circle-1"></div>
-		<div class="circle intro-circle-2"></div>
-		<div class="circle intro-circle-3"></div>
-		<div class="circle intro-circle-4"></div>
-		<div class="tm-bg-dark content-pad">
-			<h2 class="mb-4">Válassz ki egy igehelyet, gyorsan</h2>
-			<p class="mb-4">
+<div class="text-center">
+	<li class="px-3" data-page-no="1">
+		<div class="page-width-1 page-left">
+			<div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+				<div class="tm-bg-dark content-pad">
 
-				<select [(ngModel)]="selectedBook" name="book">
-					<option *ngFor="let b of books" [value]="b.value">{{ b.display }}</option>
-				</select>
-				<br><br>
-				<input type="checkbox" [(ngModel)]="showInputs"> Több vers
-				<br><br>
-			<table>
-				<tbody>
-					<tr>
-						<td><label for="fromChapter">Fejezet száma (több vers esetén a kezdet):</label>
-							<input type="number" id="fromChapter" name="fromChapter" [(ngModel)]="fromChapter">
-						</td>
-						<td><label for="fromVerse">Vers száma (több vers esetén a kezdet):</label>
-							<input type="number" id="fromVerse" name="fromVerse" [(ngModel)]="fromVerse">
-						</td>
-					</tr>
-					<tr *ngIf="showInputs">
-						<td><label for="toChapter">Fejezet száma (több vers esetén a vég):</label>
-							<input type="number" id="toChapter" name="toChapter" [(ngModel)]="toChapter">
-						</td>
-						<td><label for="toVerse">Vers száma (több vers esetén a vég):</label>
-							<input type="number" id="toVerse" name="toVerse" [(ngModel)]="toVerse">
-						</td>
-					</tr>
-				</tbody>
-			</table>
 
-			<br><br>
 
-			<button (click)="getSelectedVerses(selectedBook, fromChapter, fromVerse, toChapter, toVerse)">Válassz
-				igehelyet</button>
 
-			<br><br>
-			<h5>{{finalText}}</h5>
+					<!-- <li data-page-no="3" class="px-3">
+	<div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom"> -->
+					<div class="circle intro-circle-1"></div>
+					<div class="circle intro-circle-2"></div>
+					<div class="circle intro-circle-3"></div>
+					<div class="circle intro-circle-4"></div>
+					<div class="tm-bg-dark content-pad">
+						<h2 class="mb-4">Válassz ki egy igehelyet, gyorsan</h2>
+						<p class="mb-4">
+
+							<select [(ngModel)]="selectedBook" name="book">
+								<option *ngFor="let b of books" [value]="b.value">{{ b.display }}</option>
+							</select>
+							<br><br>
+							<input type="checkbox" [(ngModel)]="showInputs"> Több vers
+							<br><br>
+						<table>
+							<tbody>
+								<tr>
+									<td><label for="fromChapter">Fejezet száma (több vers esetén a kezdet):</label>
+										<input type="number" id="fromChapter" name="fromChapter" [(ngModel)]="fromChapter">
+									</td>
+									<td><label for="fromVerse">Vers száma (több vers esetén a kezdet):</label>
+										<input type="number" id="fromVerse" name="fromVerse" [(ngModel)]="fromVerse">
+									</td>
+								</tr>
+								<tr *ngIf="showInputs">
+									<td><label for="toChapter">Fejezet száma (több vers esetén a vég):</label>
+										<input type="number" id="toChapter" name="toChapter" [(ngModel)]="toChapter">
+									</td>
+									<td><label for="toVerse">Vers száma (több vers esetén a vég):</label>
+										<input type="number" id="toVerse" name="toVerse" [(ngModel)]="toVerse">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<br><br>
+
+						<button (click)="getSelectedVerses(selectedBook, fromChapter, fromVerse, toChapter, toVerse)">Válassz
+							igehelyet</button>
+
+						<br><br>
+						<h5>{{finalText}}</h5>
+					</div>

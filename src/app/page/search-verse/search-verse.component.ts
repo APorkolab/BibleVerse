@@ -10,7 +10,7 @@ import { BaseService } from 'src/app/service/base.service';
 })
 export class SearchVerseComponent implements OnInit {
   searchWord = '';
-
+  hitCount = 0;
   verseData!: any;
   Object: any;
 
@@ -23,12 +23,16 @@ export class SearchVerseComponent implements OnInit {
 
   search(word: string) {
     this.verseData = '';
+    this.hitCount = 0;
     this.baseService.getSearchedVerses(word).subscribe({
       next: (data: any) => {
         // A visszakapott adatokat itt kezeljük (pl. megjelenítjük a felhasználó számára)
         this.verseData = JSON.parse(JSON.stringify(data.fullTextResult.results));
+        this.hitCount = data.fullTextResult.hitCount;
       },
       error: (e) => console.error(e),
     });
   }
+
+
 }

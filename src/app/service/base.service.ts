@@ -51,9 +51,180 @@ export class BaseService {
       {
         "num": 10,
         "total": 32
+      },
+      {
+        "num": 11,
+        "total": 32
+      },
+      {
+        "num": 12,
+        "total": 20
+      },
+      {
+        "num": 13,
+        "total": 18
+      },
+      {
+        "num": 14,
+        "total": 24
+      },
+      {
+        "num": 15,
+        "total": 21
+      },
+      {
+        "num": 16,
+        "total": 16
+      },
+      {
+        "num": 17,
+        "total": 27
+      },
+      {
+        "num": 18,
+        "total": 33
+      },
+      {
+        "num": 19,
+        "total": 38
+      },
+      {
+        "num": 20,
+        "total": 18
+      },
+      {
+        "num": 21,
+        "total": 34
+      },
+      {
+        "num": 22,
+        "total": 24
+      },
+      {
+        "num": 23,
+        "total": 20
+      },
+      {
+        "num": 24,
+        "total": 67
+      },
+      {
+        "num": 25,
+        "total": 34
+      },
+      {
+        "num": 26,
+        "total": 35
+      },
+      {
+        "num": 27,
+        "total": 46
+      },
+      {
+        "num": 28,
+        "total": 22
+      },
+      {
+        "num": 29,
+        "total": 35
+      },
+      {
+        "num": 30,
+        "total": 43
+      },
+      {
+        "num": 31,
+        "total": 55
+      },
+      {
+        "num": 32,
+        "total": 32
+      },
+      {
+        "num": 33,
+        "total": 20
+      },
+      {
+        "num": 34,
+        "total": 31
+      },
+      {
+        "num": 35,
+        "total": 29
+      },
+      {
+        "num": 36,
+        "total": 43
+      },
+      {
+        "num": 37,
+        "total": 36
+      },
+      {
+        "num": 38,
+        "total": 30
+      },
+      {
+        "num": 39,
+        "total": 23
+      },
+      {
+        "num": 40,
+        "total": 23
+      },
+      {
+        "num": 41,
+        "total": 57
+      },
+      {
+        "num": 42,
+        "total": 38
+      },
+      {
+        "num": 43,
+        "total": 34
+      },
+      {
+        "num": 44,
+        "total": 34
+      },
+      {
+        "num": 45,
+        "total": 28
+      },
+      {
+        "num": 46,
+        "total": 34
+      },
+      {
+        "num": 47,
+        "total": 31
+      },
+      {
+        "num": 48,
+        "total": 22
+      },
+      {
+        "num": 49,
+        "total": 33
+      },
+      {
+        "num": 50,
+        "total": 26
       }
     ]
-  }]
+  },
+  {
+    "bookName": "Kiv",
+    "totalChapterNumber": 40,
+    "chapterVersesNumber": [
+      {
+        "num": 1,
+        "total": 22
+      },
+    ]
+  },
+  ]
   // list$: BehaviorSubject<T[]> = new BehaviorSubject<T[]>([]);
   randomItem: any | number | string;
 
