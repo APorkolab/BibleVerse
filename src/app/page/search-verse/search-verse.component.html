@@ -26,6 +26,10 @@
 					<div class="input-group justify-content-end">
 						<button type="button" (click)="search(searchWord)">Kifejezés keresése a Biblában</button>
 					</div>
+					<br>
+					<div *ngIf="verseData">
+						A összes találat száma: {{hitCount}}
+					</div>
 					<br><br>
 					<table class="mb-4 striped" *ngIf="verseData">
 						<thead>
