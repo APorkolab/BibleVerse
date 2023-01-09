@@ -11,7 +11,7 @@ Az alkalmazás képes:
  - ismert igehelyek esetén gyors kiválasztásra és lekérésre,
  - kulcsszó alapú keresésre.
 
-A program alapértelmezetten a Káldi-Neovulgáta fordításból dolgozik. A későbbi programverziókban már lehetőség nyúlik fordítást választani.
+A program alapértelmezetten a Káldi-Neovulgáta fordításból dolgozik. A későbbi programverziókban már lehetőség nyílik fordítást választani.
 
 ### **1.1.  Verziótörténet**
 #### *v1.0*
