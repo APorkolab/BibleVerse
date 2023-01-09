@@ -87,7 +87,7 @@ The application can be downloaded from:
  - quick selection and retrieval of known verbs,
  - keyword-based search.
 
-By default, the application works from the Káldi-Neovulgáta translation. In later versions of the program, it is possible to choose a long translation.
+By default, the application works from the Káldi-Neovulgáta translation. In later versions of the program, it is possible to choose an another translation.
 
 ### **1.1. Version history**
 #### *v1.0*
