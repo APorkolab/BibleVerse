@@ -81,7 +81,7 @@ This application is called **BibleVerse v.1.0.0** , which allows quick search an
 
 The front-end of the application was actually created by Dr. Ádám Porkoláb (https://www.porkolab.digital). Other software by the author and the source code of this application can be downloaded from GitHub ([https://github.com/APorkolab](https://github.com/APorkolab)).
 
-The application can be downloaded from:
+This application is capable of the following:
 
  - display random verse(s),
  - quick selection and retrieval of known verse,
