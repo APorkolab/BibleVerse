@@ -3,7 +3,7 @@
 ## **1. Az alkalmazás célja**
 Jelen alkalmazás a **BibleVerse v.1.0.0** , mely a Szentiras.hu backend API-a segítségével lehetővé teszi a gyors igehelykeresést és navigációt a Biblia szövegében.
 
-A program tulajdonképpen front-endjét Dr. Porkoláb Ádám készítette (https://www.porkolab.digital). A szerző további szoftverei és jelen program forráskódja a GitHubról tölthető le ([https://github.com/APorkolab](https://github.com/APorkolab)).
+A program tulajdonképpeni front-endjét Dr. Porkoláb Ádám készítette (https://www.porkolab.digital). A szerző további szoftverei és jelen program forráskódja a GitHubról tölthető le ([https://github.com/APorkolab](https://github.com/APorkolab)).
 
 Az alkalmazás képes:
 
