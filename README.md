@@ -83,8 +83,8 @@ The front-end of the application was actually created by Dr. Ádám Porkoláb (h
 
 The application can be downloaded from:
 
- - display random verb(s),
- - quick selection and retrieval of known verbs,
+ - display random verse(s),
+ - quick selection and retrieval of known verse,
  - keyword-based search.
 
 By default, the application works from the Káldi-Neovulgáta translation. In later versions of the program, it is possible to choose an another translation.
