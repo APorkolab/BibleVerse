@@ -9,7 +9,7 @@
     "test": "ng test"
   },
   "private": true,
-  "homepage": "https://bibleverse.porkolab.digital",
+  "homepage": "https://bibleverse.porkolab.hu",
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
