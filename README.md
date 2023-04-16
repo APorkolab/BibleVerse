@@ -147,7 +147,7 @@ OR
 
 - First of all, I would like to thank the developers of [Szentírás.hu](https://szentiras.hu/), [Bertalan Fodor](https://github.com/briff), [László Elek](https://github.com/borazslo) and [Márton Molnár](https://github.com/molnarm) for the backend API! God bless and help the developers in their future work!
 
-- Thanks to Ben Kuhl ([https://github.com/bkuhl/bible-verse-counts-per-chapter](https://github.com/bkuhl/bible-verse-counts-per-chapter)) for the JSON file containing the chapter and verse numbers of the books of the Bible. This was essential for generating random verses. I filled in the missing books (Tob, Judith, Wise, Sirius, Bar, 1 Macc and 2 Macc) using data from [Scripture.com](https://szentiras.hu/).
+- Thanks to Ben Kuhl ([https://github.com/bkuhl/bible-verse-counts-per-chapter](https://github.com/bkuhl/bible-verse-counts-per-chapter)) for the JSON file containing the chapter and verse numbers of the books of the Bible. This was essential for generating random verses. I filled in the missing books (Tob, Judith, Wise, Sirius, Bar, 1 Macc and 2 Macc) using data from [Szentírás.hu](https://szentiras.hu/).
 - Thanks to TemplateMo for the free Astro Motion template that I could customize ([https://templatemo.com/tm-560-astro-motion](https://templatemo.com/tm-560-astro-motion))
 
 ## **6. Plans for the next version:**
