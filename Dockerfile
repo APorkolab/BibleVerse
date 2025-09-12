@@ -13,8 +13,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci --only=production --no-audit --no-fund
+# Install all dependencies (needed for build)
+RUN npm ci --no-audit --no-fund --legacy-peer-deps
 
 # Copy source code
 COPY . .
@@ -74,13 +74,17 @@ USER bibleverse
 # Expose port
 EXPOSE 8080
 
+# Build arguments for production stage
+ARG VERSION=latest
+ARG BUILD_DATE
+
 # Labels for metadata
 LABEL maintainer="Dr. Porkoláb Ádám <adam@porkolab.hu>"
 LABEL version="${VERSION}"
 LABEL description="BibleVerse - Angular application for Bible verse lookup"
 LABEL org.opencontainers.image.source="https://github.com/APorkolab/BibleVerse"
 LABEL org.opencontainers.image.version="${VERSION}"
-LABEL org.opencontainers.image.created="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+LABEL org.opencontainers.image.created="${BUILD_DATE}"
 
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]
