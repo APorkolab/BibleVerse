@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Verse } from 'src/app/model/verse';
 import { BaseService } from 'src/app/service/base.service';
 
 @Component({
   selector: 'app-search-verse',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './search-verse.component.html',
   styleUrls: ['./search-verse.component.scss'],
 })

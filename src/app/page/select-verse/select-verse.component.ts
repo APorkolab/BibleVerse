@@ -1,11 +1,13 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Verse } from 'src/app/model/verse';
 import { BaseService } from 'src/app/service/base.service';
 
 @Component({
   selector: 'app-select-verse',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './select-verse.component.html',
   styleUrls: ['./select-verse.component.scss'],
 })
