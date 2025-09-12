@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    
-    // === DEVELOPMENT ===
     "start": "ng serve --host 0.0.0.0 --port 4200",
     "start:dev": "ng serve --configuration development --host 0.0.0.0 --port 4200",
     "start:prod": "npx serve -s dist/bibleverse -p 8080",
     "dev": "npm run start:dev",
     "serve": "npx serve -s dist/bibleverse",
     "watch": "ng build --watch --configuration=development",
-    
-    // === BUILDING ===
     "build": "ng build --configuration=production",
     "build:dev": "ng build --configuration=development",
     "build:development": "ng build --configuration=development",
@@ -20,8 +16,6 @@
     "build:production": "ng build --configuration=production",
     "build:analyze": "ng build --configuration=production --stats-json && npx webpack-bundle-analyzer dist/bibleverse/stats.json",
     "build:docker": "docker build -t bibleverse:latest .",
-    
-    // === TESTING ===
     "test": "ng test",
     "test:unit": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
     "test:watch": "ng test --watch=true",
@@ -31,29 +25,21 @@
     "test:e2e": "ng e2e",
     "e2e": "ng e2e",
     "e2e:headless": "ng e2e --headless",
-    
-    // === CODE QUALITY ===
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "lint:check": "ng lint --max-warnings 0",
     "format": "prettier --write \"src/**/*.{ts,html,scss,json}\"",
     "format:check": "prettier --check \"src/**/*.{ts,html,scss,json}\"",
     "format:staged": "lint-staged",
-    
-    // === SECURITY & AUDITING ===
     "audit": "npm audit",
     "audit:fix": "npm audit fix",
     "audit:security": "npm audit --audit-level=moderate",
     "security:scan": "npm audit && snyk test",
     "dependencies:check": "npm outdated",
     "dependencies:update": "npm update",
-    
-    // === QUALITY ANALYSIS ===
     "sonar": "sonar-scanner",
     "sonar:local": "sonar-scanner -Dsonar.host.url=http://localhost:9000",
     "analyze": "npm run lint && npm run test:coverage && npm run sonar",
-    
-    // === DOCKER ===
     "docker:build": "docker build -t bibleverse:latest .",
     "docker:build:dev": "docker build -f Dockerfile.dev -t bibleverse:dev .",
     "docker:run": "docker run -p 8080:8080 bibleverse:latest",
@@ -61,29 +47,21 @@
     "docker:compose": "docker-compose up",
     "docker:compose:dev": "docker-compose --profile development up",
     "docker:compose:down": "docker-compose down",
-    
-    // === DEPLOYMENT ===
     "deploy:staging": "npm run build:staging && echo 'Deploy to staging'",
     "deploy:production": "npm run build:production && echo 'Deploy to production'",
     "k8s:deploy:staging": "kubectl apply -f k8s/staging/",
     "k8s:deploy:production": "kubectl apply -f k8s/production/",
-    
-    // === UTILITIES ===
     "clean": "rm -rf dist/ node_modules/.cache coverage/",
     "clean:all": "rm -rf dist/ node_modules/ coverage/ .angular/cache/",
     "clean:install": "npm run clean:all && npm install",
     "prebuild": "npm run clean",
     "postinstall": "ngcc --properties es2020 browser module main --first-only --create-ivy-entry-points",
-    
-    // === CI/CD HELPERS ===
     "ci:install": "npm ci --no-audit --no-fund",
     "ci:build": "npm run build:production",
     "ci:test": "npm run test:ci",
     "ci:lint": "npm run lint:check",
     "ci:security": "npm run audit:security",
     "ci:quality": "npm run ci:lint && npm run ci:test && npm run ci:security",
-    
-    // === RELEASE ===
     "version:patch": "npm version patch",
     "version:minor": "npm version minor",
     "version:major": "npm version major",
