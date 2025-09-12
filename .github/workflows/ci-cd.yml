@@ -129,7 +129,6 @@ jobs:
         continue-on-error: true
         
       - name: 📊 Run SonarCloud Scan
-        if: ${{ secrets.SONAR_TOKEN != '' }}
         uses: SonarSource/sonarcloud-github-action@master
         timeout-minutes: 5
         env:
