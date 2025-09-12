@@ -11,23 +11,21 @@ html,
 body,
 .page-container {
   height: 100%;
-  font-family: 'Source Sans Pro',
-    sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 19px;
   font-weight: 300;
   color: white;
   line-height: 1.5;
 }
 
-
 a {
-  color: #9F6;
+  color: #9f6;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #3CF;
+  color: #3cf;
 }
 
 p {
@@ -39,7 +37,7 @@ h2 {
 }
 
 .highlight {
-  color: #0D78BE;
+  color: #0d78be;
 }
 
 .page-container {
@@ -83,7 +81,7 @@ h2 {
   min-height: 100%;
   transform: translateX(-50%) translateY(-50%);
   z-index: -100;
-  background-image: url('../src/assets/img/tm-astro-bg.jpg');
+  background-image: url("../src/assets/img/tm-astro-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,13 +144,13 @@ h2 {
 
 .navbar .navbar-nav .nav-item.selected .nav-link:active,
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #0D78BE;
-  border-bottom: 1px solid #0D78BE;
+  color: #0d78be;
+  border-bottom: 1px solid #0d78be;
 }
 
-.cd-slider-nav li.selected a+.circle,
-.navbar .navbar-nav .nav-item .nav-link:hover+.circle {
-  background-color: #0D78BE;
+.cd-slider-nav li.selected a + .circle,
+.navbar .navbar-nav .nav-item .nav-link:hover + .circle {
+  background-color: #0d78be;
 }
 
 .navbar-toggler-icon {
@@ -173,7 +171,7 @@ h2 {
 
 .tm-link-white:hover,
 .tm-link-white:focus {
-  color: #0D78BE;
+  color: #0d78be;
 }
 
 .cd-hero-slider {
@@ -298,7 +296,7 @@ h2 {
 }
 
 .gallery-slider figure figcaption,
-.gallery-slider figure figcaption>a {
+.gallery-slider figure figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -308,7 +306,7 @@ h2 {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.gallery-slider figure figcaption>a {
+.gallery-slider figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -354,8 +352,12 @@ figure.effect-julia {
 }
 
 figure.effect-julia img {
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
+  -webkit-transition:
+    opacity 1s,
+    -webkit-transform 1s;
+  transition:
+    opacity 1s,
+    transform 1s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -379,8 +381,12 @@ figure.effect-julia p {
   text-transform: none;
   font-weight: 500;
   font-size: 75%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition:
+    opacity 0.35s,
+    -webkit-transform 0.35s;
+  transition:
+    opacity 0.35s,
+    transform 0.35s;
   -webkit-transform: translate3d(-360px, 0, 0);
   transform: translate3d(-360px, 0, 0);
 }
@@ -429,7 +435,7 @@ figure.effect-julia:hover p {
 
 .gallery-slider .slick-dots li.slick-active,
 .gallery-slider .slick-dots li:hover {
-  background-color: #3CCDFF;
+  background-color: #3ccdff;
 }
 
 .gallery-slider .slick-dots li {
@@ -466,7 +472,7 @@ figure.effect-julia:hover p {
 }
 
 .form-control:focus {
-  border-bottom: 1px solid #0D78BE;
+  border-bottom: 1px solid #0d78be;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -592,7 +598,6 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 600px) {
-
   .intro-left,
   .intro-right {
     width: 100%;
@@ -617,7 +622,7 @@ figure.effect-julia:hover p {
   .intro-img-1 {
     margin-right: 4%;
     margin-bottom: 0;
-    width: 48%
+    width: 48%;
   }
 
   .intro-img-2 {
@@ -730,7 +735,7 @@ figure.effect-julia:hover p {
   /* IE 9 */
   transform: translateX(-100%);
   /* Firefox 16+, IE 10+, Opera */
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
@@ -738,7 +743,7 @@ figure.effect-julia:hover p {
   /* IE 9 */
   transform: translateX(100%);
   /* Firefox 16+, IE 10+, Opera */
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader {
@@ -923,11 +928,11 @@ figure.effect-julia:hover p {
 }
 
 .slick-prev:before {
-  content: '\f104';
+  content: "\f104";
 }
 
 [dir="rtl"] .slick-prev:before {
-  content: '';
+  content: "";
 }
 
 .slick-next {
@@ -940,11 +945,11 @@ figure.effect-julia:hover p {
 }
 
 .slick-next:before {
-  content: '\f105';
+  content: "\f105";
 }
 
 [dir="rtl"] .slick-next:before {
-  content: '';
+  content: "";
 }
 
 /* Dots */
@@ -1005,5 +1010,5 @@ figure.effect-julia:hover p {
 .slick-dots li.slick-active button:before {
   color: red;
   opacity: 1;
-  content: '\f192';
+  content: "\f192";
 }

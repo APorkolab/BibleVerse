@@ -8,9 +8,8 @@ describe('SearchVerseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchVerseComponent ]
-    })
-    .compileComponents();
+      declarations: [SearchVerseComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(SearchVerseComponent);
     component = fixture.componentInstance;

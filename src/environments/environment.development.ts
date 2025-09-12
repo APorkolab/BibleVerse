@@ -4,14 +4,14 @@ export const environment = {
   staging: false,
   name: 'development',
   version: '1.0.0-dev',
-  
+
   // API Configuration
   api: {
     baseUrl: 'https://szentiras.hu/api',
     timeout: 10000,
-    retries: 3
+    retries: 3,
   },
-  
+
   // Feature Flags
   features: {
     enableDevTools: true,
@@ -19,35 +19,35 @@ export const environment = {
     enableDebugging: true,
     enableAnalytics: false,
     enableServiceWorker: false,
-    enableE2EHelpers: true
+    enableE2EHelpers: true,
   },
-  
+
   // Logging Configuration
   logging: {
     level: 'debug',
     enableConsoleLogging: true,
     enableRemoteLogging: false,
-    remoteLoggingUrl: ''
+    remoteLoggingUrl: '',
   },
-  
+
   // Analytics Configuration
   analytics: {
     enabled: false,
     googleAnalyticsId: '',
-    trackingEvents: false
+    trackingEvents: false,
   },
-  
+
   // Cache Configuration
   cache: {
     enabled: true,
     ttl: 300, // 5 minutes for development
-    maxSize: 100
+    maxSize: 100,
   },
-  
+
   // Security Configuration
   security: {
     enableCSP: false,
     allowUnsafeEval: true,
-    allowUnsafeInline: true
-  }
+    allowUnsafeInline: true,
+  },
 };

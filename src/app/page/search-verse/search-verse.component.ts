@@ -6,7 +6,7 @@ import { BaseService } from 'src/app/service/base.service';
 @Component({
   selector: 'app-search-verse',
   templateUrl: './search-verse.component.html',
-  styleUrls: ['./search-verse.component.scss']
+  styleUrls: ['./search-verse.component.scss'],
 })
 export class SearchVerseComponent implements OnInit {
   searchWord = '';
@@ -14,12 +14,9 @@ export class SearchVerseComponent implements OnInit {
   verseData!: any;
   Object: any;
 
-  constructor(
-    private baseService: BaseService,
-  ) { }
+  constructor(private baseService: BaseService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   search(word: string) {
     this.verseData = '';
@@ -30,12 +27,10 @@ export class SearchVerseComponent implements OnInit {
         this.verseData = JSON.parse(JSON.stringify(data.fullTextResult.results));
         this.hitCount = data.fullTextResult.hitCount;
       },
-      error: (e) => console.error(e),
+      error: e => console.error(e),
     });
   }
   scrollToTop() {
     window.scrollTo(0, 0);
   }
-
-
 }
