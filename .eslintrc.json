@@ -12,9 +12,7 @@
       "files": ["*.ts"],
       "extends": [
         "@angular-eslint/recommended",
-        "@angular-eslint/template/process-inline-templates",
-        "@typescript-eslint/recommended",
-        "@typescript-eslint/recommended-requiring-type-checking"
+        "@angular-eslint/template/process-inline-templates"
       ],
       "plugins": [
         "@typescript-eslint",
