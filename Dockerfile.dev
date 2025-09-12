@@ -1,0 +1,43 @@
+# ==========================================
+# Development Dockerfile for BibleVerse
+# ==========================================
+
+FROM node:20-alpine
+
+# Install system dependencies
+RUN apk add --no-cache \
+    git \
+    curl \
+    bash \
+    chromium \
+    nss \
+    freetype \
+    freetype-dev \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont
+
+# Set Chrome path for Puppeteer
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+    PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including devDependencies)
+RUN npm ci --no-audit --no-fund
+
+# Set global Angular CLI
+RUN npm install -g @angular/cli@latest
+
+# Copy source code
+COPY . .
+
+# Expose ports for Angular dev server and live reload
+EXPOSE 4200 49153
+
+# Default command for development
+CMD ["npm", "run", "start", "--", "--host", "0.0.0.0", "--port", "4200", "--live-reload-port", "49153"]

@@ -1,0 +1,39 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit checks..."
+
+# Check if this is a merge commit
+if git rev-parse --verify MERGE_HEAD > /dev/null 2>&1; then
+    echo "✅ Merge commit detected, skipping pre-commit hooks"
+    exit 0
+fi
+
+# Check for large files (>5MB)
+echo "📦 Checking for large files..."
+git diff --cached --name-only | xargs -I {} find {} -size +5M 2>/dev/null | head -1 | grep -q . && {
+    echo "❌ Large files detected (>5MB). Please use Git LFS or remove them."
+    exit 1
+}
+
+# Check for secrets
+echo "🔒 Checking for potential secrets..."
+if git diff --cached --name-only | xargs grep -l -i -E "(password|secret|key|token|api)" -- 2>/dev/null | grep -v ".md$"; then
+    echo "⚠️  Potential secrets detected. Please review before committing."
+    echo "If these are intentional, add them to .gitignore or use environment variables."
+fi
+
+# Format staged files
+echo "🎨 Formatting staged files..."
+npm run format:staged
+
+# Lint staged files
+echo "🧹 Linting staged files..."
+npm run lint:check
+
+# Run unit tests
+echo "🧪 Running unit tests..."
+npm run test:ci
+
+echo "✅ All pre-commit checks passed!"
+exit 0

@@ -1,26 +1,327 @@
-# Dokumentáció -- BibleVerse v.1.0.0
+# 📖 BibleVerse - Enterprise Bible Verse Lookup Application
 
-## **1. Az alkalmazás célja**
+[![Build Status](https://github.com/APorkolab/BibleVerse/workflows/CI%2FCD%20Pipeline%20-%20BibleVerse/badge.svg)](https://github.com/APorkolab/BibleVerse/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bibleverse)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=coverage)](https://sonarcloud.io/summary/new_code?id=bibleverse)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=bibleverse)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=maintainability_rating)](https://sonarcloud.io/summary/new_code?id=bibleverse)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Jelen alkalmazás a **BibleVerse v.1.0.0** , mely a Szentiras.hu backend API-a segítségével lehetővé teszi a gyors igehelykeresést és navigációt a Biblia szövegében.
+A modern, enterprise-grade Angular application for Bible verse lookup and navigation, utilizing the Szentiras.hu API.
 
-A program tulajdonképpeni front-endjét Dr. Porkoláb Ádám készítette (https://pklab.hu). A szerző további szoftverei és jelen program forráskódja a GitHubról tölthető le ([https://github.com/APorkolab](https://github.com/APorkolab)).
+## 🌟 Features
 
-Az alkalmazás képes:
+- ✨ **Random verse display** - Discover new verses daily
+- 🔍 **Quick verse lookup** - Find specific verses instantly  
+- 🔎 **Keyword search** - Search by content and context
+- 🌍 **Multi-environment support** - Development, staging, production
+- 🔒 **Enterprise security** - CSP, HTTPS, security headers
+- 📱 **Responsive design** - Works on all devices
+- 🚀 **PWA ready** - Offline support and app-like experience
+- 🔧 **CI/CD pipeline** - Automated testing, building, and deployment
+- 📊 **Monitoring & analytics** - Comprehensive observability
+- 🐳 **Containerized** - Docker and Kubernetes ready
 
-- véletlenszerű igehely(ek) megjelenítésére,
-- ismert igehelyek esetén gyors kiválasztásra és lekérésre,
-- kulcsszó alapú keresésre.
+## 🏗️ Architecture
 
-A program alapértelmezetten a Káldi-Neovulgáta fordításból dolgozik. A későbbi programverziókban már lehetőség nyílik fordítást választani.
+### Tech Stack
+- **Frontend**: Angular 20+ with TypeScript
+- **Styling**: Bootstrap 5.3+, SCSS
+- **Testing**: Jasmine, Karma, Jest
+- **Build**: Angular CLI, webpack
+- **CI/CD**: GitHub Actions
+- **Containerization**: Docker, Kubernetes
+- **Quality**: ESLint, Prettier, SonarQube
+- **Security**: OWASP, Trivy, npm audit
 
-### **1.1. Verziótörténet**
+### Project Structure
+```
+bibleverse/
+├── .github/workflows/       # CI/CD pipelines
+├── k8s/                    # Kubernetes manifests
+│   ├── staging/           # Staging environment
+│   └── production/        # Production environment
+├── src/                   # Source code
+│   ├── app/              # Angular application
+│   ├── environments/     # Environment configurations
+│   └── assets/           # Static assets
+├── docs/                 # Documentation
+├── docker-compose.yml    # Local development
+├── Dockerfile           # Production container
+├── Dockerfile.dev       # Development container
+└── README.md            # This file
+```
 
-#### _v1.0_
+## 🚀 Quick Start
 
-- Frontend Angular 15-es alapú.
-- A program Szentiras.hu API 2023.01.08-i változatával kompatibilis HTTP kéréseket generál,
-- A teljes, tervezett funkcionalitás elkészült.
+### Prerequisites
+- Node.js 20+ LTS
+- npm 10+
+- Git
+- Docker (optional)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/APorkolab/BibleVerse.git
+cd BibleVerse
+
+# Run setup script (recommended)
+./scripts/setup.sh
+
+# OR manual setup
+npm install
+npm run start:dev
+```
+
+### Development
+
+```bash
+# Start development server
+npm run start:dev          # http://localhost:4200
+
+# Build for different environments
+npm run build:development  # Development build
+npm run build:staging      # Staging build
+npm run build:production   # Production build
+
+# Testing
+npm run test              # Run unit tests
+npm run test:coverage     # Run with coverage
+npm run e2e               # Run E2E tests
+
+# Code quality
+npm run lint              # Run ESLint
+npm run format            # Run Prettier
+npm run ci:quality        # Run all quality checks
+```
+
+### Docker Development
+
+```bash
+# Start development environment
+docker-compose --profile development up
+
+# Build production image
+docker build -t bibleverse:latest .
+
+# Run production container
+docker run -p 8080:8080 bibleverse:latest
+```
+
+## 🔧 Configuration
+
+### Environment Variables
+
+```bash
+# Development
+NODE_ENV=development
+ENVIRONMENT=development
+API_BASE_URL=https://szentiras.hu/api
+
+# Production
+NODE_ENV=production
+ENVIRONMENT=production
+ANALYTICS_ID=your-analytics-id
+```
+
+### Build Configurations
+
+- **Development**: Unoptimized, source maps, debugging enabled
+- **Staging**: Optimized with source maps, analytics enabled
+- **Production**: Fully optimized, analytics, PWA features
+
+## 📱 Features
+
+### Core Functionality
+- 🎲 Random Bible verse generation
+- 🔍 Quick verse lookup by reference
+- 🔎 Full-text search with highlighting
+- 📖 Multiple Bible translations (Káldi-Neovulgáta)
+- 🌍 Responsive design for all devices
+
+### Technical Features
+- ⚡ Angular 18+ with TypeScript
+- 🎨 Bootstrap 5.3+ styling
+- 🔒 Enterprise-grade security
+- 📊 Comprehensive monitoring
+- 🚀 PWA capabilities
+- 🐳 Docker containerization
+- ☸️ Kubernetes deployment
+
+## 🧪 Testing
+
+### Test Coverage
+- Unit Tests: 80%+ coverage required
+- Integration Tests: API and service integration
+- E2E Tests: Complete user workflows
+- Security Tests: Vulnerability scanning
+
+### Running Tests
+
+```bash
+# All tests
+npm run test
+
+# Specific test types
+npm run test:unit         # Unit tests only
+npm run test:integration  # Integration tests
+npm run e2e:headless      # E2E tests (headless)
+
+# Coverage report
+npm run test:coverage
+open coverage/index.html
+```
+
+## 🚀 Deployment
+
+### Environments
+
+- **Development**: `http://localhost:4200`
+- **Staging**: `https://staging-bibleverse.porkolab.hu`
+- **Production**: `https://bibleverse.porkolab.hu`
+
+### CI/CD Pipeline
+
+Automated deployment via GitHub Actions:
+1. Code quality checks (ESLint, Prettier)
+2. Security scanning (Trivy, npm audit)
+3. Testing (unit, integration, E2E)
+4. Docker build and push
+5. Kubernetes deployment
+6. Health checks and notifications
+
+### Manual Deployment
+
+```bash
+# Build and deploy to staging
+npm run build:staging
+kubectl apply -f k8s/staging/
+
+# Build and deploy to production
+npm run build:production
+kubectl apply -f k8s/production/
+```
+
+## 📊 Monitoring
+
+### Application Metrics
+- Performance monitoring with Core Web Vitals
+- Error tracking and alerting
+- User analytics and engagement
+- API response time monitoring
+
+### Infrastructure Monitoring
+- Kubernetes cluster health
+- Container resource usage
+- Network performance
+- Security event logging
+
+### Dashboards
+- **Grafana**: Application and infrastructure metrics
+- **SonarQube**: Code quality and security
+- **GitHub Actions**: CI/CD pipeline status
+
+## 🔒 Security
+
+### Security Features
+- OWASP Top 10 compliance
+- Content Security Policy (CSP)
+- Security headers implementation
+- Container vulnerability scanning
+- Dependency security auditing
+
+### Security Testing
+- Static Application Security Testing (SAST)
+- Dependency vulnerability scanning
+- Container image scanning
+- Security code review process
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBUTING.md) for details.
+
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for your changes
+5. Run quality checks
+6. Submit a pull request
+
+### Code Standards
+- Follow the [Angular Style Guide](https://angular.io/guide/styleguide)
+- Maintain 80%+ test coverage
+- Use conventional commit messages
+- Pass all quality gates
+
+## 📋 Roadmap
+
+### Version 1.1 (Q2 2024)
+- [ ] Multi-language support (English, German)
+- [ ] Advanced search filters
+- [ ] User favorites and bookmarks
+- [ ] Offline reading capability
+
+### Version 1.2 (Q3 2024)
+- [ ] Dark mode theme
+- [ ] Reading plans and devotionals
+- [ ] Social sharing features
+- [ ] Enhanced mobile experience
+
+### Version 2.0 (Q4 2024)
+- [ ] Multiple Bible translations
+- [ ] Commentary integration
+- [ ] Study tools and notes
+- [ ] Audio Bible support
+
+## 📚 Documentation
+
+- [Contributing Guidelines](docs/CONTRIBUTING.md)
+- [CI/CD Documentation](docs/CICD.md)
+- [Deployment Guide](docs/DEPLOYMENT.md)
+- [Security Policy](SECURITY.md)
+- [Changelog](CHANGELOG.md)
+
+## 📞 Support
+
+### Getting Help
+- **Documentation**: Check the [docs/](./docs/) directory
+- **Issues**: [GitHub Issues](https://github.com/APorkolab/BibleVerse/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/APorkolab/BibleVerse/discussions)
+- **Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+
+### Commercial Support
+For enterprise support, custom development, or consulting services, contact:
+- **Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Website**: [https://pklab.hu](https://pklab.hu)
+
+## 🙏 Acknowledgments
+
+### API Provider
+Special thanks to the [Szentírás.hu](https://szentiras.hu/) team for providing the Bible API:
+- **Fodor Bertalan** ([@briff](https://github.com/briff))
+- **Elek László** ([@borazslo](https://github.com/borazslo))
+- **Molnár Márton** ([@molnarm](https://github.com/molnarm))
+
+### Data Sources
+- Bible verse counts: [Ben Kuhl](https://github.com/bkuhl/bible-verse-counts-per-chapter)
+- Template: [TemplateMo Astro Motion](https://templatemo.com/tm-560-astro-motion)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=APorkolab/BibleVerse&type=Date)](https://star-history.com/#APorkolab/BibleVerse&Date)
+
+---
+
+**Made with ❤️ by [Dr. Porkoláb Ádám](https://pklab.hu)**
+
+*"For the word of God is alive and active. Sharper than any double-edged sword..." - Hebrews 4:12*
 
 ## **2. Az alkalmazás telepítése**
 

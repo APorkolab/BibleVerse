@@ -1,0 +1,155 @@
+version: '3.8'
+
+services:
+  # ==========================================
+  # BibleVerse Application
+  # ==========================================
+  bibleverse-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VERSION: ${VERSION:-dev}
+        ENVIRONMENT: ${ENVIRONMENT:-development}
+      target: production
+    container_name: bibleverse-app
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bibleverse.rule=Host(`localhost`)"
+      - "traefik.http.routers.bibleverse.entrypoints=web"
+      - "traefik.http.services.bibleverse.loadbalancer.server.port=8080"
+    networks:
+      - bibleverse-network
+
+  # ==========================================
+  # Reverse Proxy (Optional)
+  # ==========================================
+  reverse-proxy:
+    image: traefik:v3.0
+    container_name: bibleverse-proxy
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8081:8080" # Traefik dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - bibleverse-network
+    profiles:
+      - proxy
+
+  # ==========================================
+  # Development Environment
+  # ==========================================
+  bibleverse-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        NODE_VERSION: 20
+    container_name: bibleverse-dev
+    ports:
+      - "4200:4200"
+      - "49153:49153" # Live reload
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    command: npm run start
+    restart: unless-stopped
+    networks:
+      - bibleverse-network
+    profiles:
+      - development
+
+  # ==========================================
+  # Testing Environment
+  # ==========================================
+  bibleverse-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        NODE_VERSION: 20
+    container_name: bibleverse-test
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=test
+    command: npm run test:ci
+    networks:
+      - bibleverse-network
+    profiles:
+      - testing
+
+  # ==========================================
+  # Monitoring (Optional)
+  # ==========================================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: bibleverse-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+    networks:
+      - bibleverse-network
+    profiles:
+      - monitoring
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: bibleverse-grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+    networks:
+      - bibleverse-network
+    profiles:
+      - monitoring
+
+# ==========================================
+# Networks
+# ==========================================
+networks:
+  bibleverse-network:
+    driver: bridge
+    name: bibleverse-network
+
+# ==========================================
+# Volumes
+# ==========================================
+volumes:
+  prometheus_data:
+    name: bibleverse_prometheus_data
+  grafana_data:
+    name: bibleverse_grafana_data
