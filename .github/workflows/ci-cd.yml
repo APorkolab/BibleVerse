@@ -399,7 +399,7 @@ jobs:
           
       - name: 📢 Notify deployment
         uses: 8398a7/action-slack@v3
-        if: always() && secrets.SLACK_WEBHOOK_URL != ''
+        if: always() && env.SLACK_WEBHOOK_URL != ''
         with:
           status: ${{ job.status }}
           text: |
@@ -410,13 +410,15 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           
       - name: 📝 Log deployment status (Slack disabled)
-        if: always() && secrets.SLACK_WEBHOOK_URL == ''
+        if: always() && env.SLACK_WEBHOOK_URL == ''
         run: |
           echo "📢 Slack notifications disabled (no webhook URL configured)"
           echo "🚀 BibleVerse deployment completed"
           echo "Status: ${{ job.status }}"
           echo "Version: ${{ needs.setup.outputs.version }}"
           echo "Environment: staging"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
   deploy-production:
     name: 🚀 Deploy to Production
@@ -445,7 +447,7 @@ jobs:
           
       - name: 📢 Notify deployment
         uses: 8398a7/action-slack@v3
-        if: always() && secrets.SLACK_WEBHOOK_URL != ''
+        if: always() && env.SLACK_WEBHOOK_URL != ''
         with:
           status: ${{ job.status }}
           text: |
@@ -457,7 +459,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           
       - name: 📝 Log deployment status (Slack disabled)
-        if: always() && secrets.SLACK_WEBHOOK_URL == ''
+        if: always() && env.SLACK_WEBHOOK_URL == ''
         run: |
           echo "📢 Slack notifications disabled (no webhook URL configured)"
           echo "🎉 BibleVerse deployment completed!"
@@ -465,6 +467,8 @@ jobs:
           echo "Version: ${{ needs.setup.outputs.version }}"
           echo "Environment: production"
           echo "URL: https://bibleverse.porkolab.hu"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
   # ==========================================
   # POST-DEPLOYMENT
