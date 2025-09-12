@@ -438,9 +438,8 @@ jobs:
           echo "- **Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Deployed at:** $(date)" >> $GITHUB_STEP_SUMMARY
           
-      - name: 🔄 Update deployment status
-        uses: chrnorm/deployment-status@v2
-        with:
-          token: ${{ github.token }}
-          state: ${{ job.status }}
-          deployment-id: ${{ needs.deploy-staging.outputs.deployment-id || needs.deploy-production.outputs.deployment-id }}
+      - name: 🔄 Deployment completed
+        run: |
+          echo "✅ Deployment workflow completed successfully!"
+          echo "Environment: ${{ needs.setup.outputs.environment }}"
+          echo "Version: ${{ needs.setup.outputs.version }}"
