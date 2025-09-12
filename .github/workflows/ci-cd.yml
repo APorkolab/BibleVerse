@@ -128,10 +128,11 @@ jobs:
         run: npm run lint
         continue-on-error: true
         
-      - name: 📊 Run SonarQube analysis
-        uses: sonarqube-quality-gate-action@v1.3.0
+      - name: 📊 Run SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
         timeout-minutes: 5
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         continue-on-error: true
         
