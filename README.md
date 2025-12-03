@@ -1,10 +1,5 @@
 # 📖 BibleVerse - Enterprise Bible Verse Lookup Application
 
-[![Build Status](https://github.com/APorkolab/BibleVerse/workflows/CI%2FCD%20Pipeline%20-%20BibleVerse/badge.svg)](https://github.com/APorkolab/BibleVerse/actions)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bibleverse)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=coverage)](https://sonarcloud.io/summary/new_code?id=bibleverse)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=bibleverse)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=bibleverse&metric=maintainability_rating)](https://sonarcloud.io/summary/new_code?id=bibleverse)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modern, enterprise-grade Angular application for Bible verse lookup and navigation, utilizing the Szentiras.hu API.
@@ -295,7 +290,7 @@ We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBU
 ### Commercial Support
 For enterprise support, custom development, or consulting services, contact:
 - **Email**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
-- **Website**: [https://pklab.hu](https://pklab.hu)
+- **Website**: [https://aporkolab.com](https://aporkolab.com)
 
 ## 🙏 Acknowledgments
 
@@ -319,7 +314,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by [Dr. Porkoláb Ádám](https://pklab.hu)**
+**Made with ❤️ by [Dr. Porkoláb Ádám](https://aporkolab.com)**
 
 *"For the word of God is alive and active. Sharper than any double-edged sword..." - Hebrews 4:12*
 
@@ -385,7 +380,7 @@ VAGY
 
 This application is called **BibleVerse v.1.0.0** , which allows quick search and navigation in the Bible text using the Szentiras.hu backend API.
 
-The front-end of the application was actually created by Dr. Ádám Porkoláb (https://www.pklab.hu). Other software by the author and the source code of this application can be downloaded from GitHub ([https://github.com/APorkolab](https://github.com/APorkolab)).
+The front-end of the application was actually created by Dr. Ádám Porkoláb (https://www.aporkolab.com). Other software by the author and the source code of this application can be downloaded from GitHub ([https://github.com/APorkolab](https://github.com/APorkolab)).
 
 This application is capable of the following:
 
@@ -435,7 +430,6 @@ OR
 ## **3. Start the application**
 
 - Both the backend and the frontend can be started with `npm start`.
-- The current version of the game is available at [https://bibleverse.aporkolab.com/].
 
 ## **4. Contact information**
 
