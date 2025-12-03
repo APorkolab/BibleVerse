@@ -69,7 +69,7 @@
     "release:major": "npm run version:major && git push --follow-tags"
   },
   "private": true,
-  "homepage": "https://bibleverse.porkolab.hu",
+  "homepage": "https://bibleverse.aporkolab.com",
   "dependencies": {
     "@angular/animations": "^20.1.5",
     "@angular/common": "^20.1.5",

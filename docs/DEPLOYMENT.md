@@ -67,7 +67,7 @@ kubectl get pods -n bibleverse-staging
 kubectl get ingress -n bibleverse-staging
 
 # Access staging
-open https://staging-bibleverse.porkolab.hu
+open https://staging-bibleverse.aporkolab.com
 ```
 
 ### Production Environment
@@ -81,7 +81,7 @@ kubectl get pods -n bibleverse-production
 kubectl get ingress -n bibleverse-production
 
 # Access production
-open https://bibleverse.porkolab.hu
+open https://bibleverse.aporkolab.com
 ```
 
 ## 🐳 Docker Deployment
@@ -228,7 +228,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: adam@porkolab.hu
+    email: ap@aporkolab.com
     privateKeySecretRef:
       name: letsencrypt-prod
     solvers:
@@ -330,7 +330,7 @@ spec:
 
 ```bash
 # Application health
-curl https://bibleverse.porkolab.hu/health
+curl https://bibleverse.aporkolab.com/health
 
 # Kubernetes health
 kubectl get pods -n bibleverse-production
@@ -510,7 +510,7 @@ kubectl rollout restart deployment/bibleverse-production -n bibleverse-productio
    ```bash
    # Route traffic to backup region
    kubectl patch ingress bibleverse-ingress-production \
-     -p '{"spec":{"rules":[{"host":"bibleverse.porkolab.hu","http":{"paths":[{"path":"/","pathType":"Prefix","backend":{"service":{"name":"bibleverse-backup","port":{"number":80}}}}]}}]}}' \
+     -p '{"spec":{"rules":[{"host":"bibleverse.aporkolab.com","http":{"paths":[{"path":"/","pathType":"Prefix","backend":{"service":{"name":"bibleverse-backup","port":{"number":80}}}}]}}]}}' \
      -n bibleverse-production
    ```
 
@@ -538,9 +538,9 @@ kubectl rollout restart deployment/bibleverse-production -n bibleverse-productio
 - [Skaffold](https://skaffold.dev/) (for development)
 
 ### Support Contacts
-- **Infrastructure**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
-- **Security**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
-- **Emergency**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Infrastructure**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
+- **Security**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
+- **Emergency**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 
 ---
 

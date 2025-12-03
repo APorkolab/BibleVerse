@@ -32,7 +32,7 @@ We take security seriously. If you discover a security vulnerability, please fol
 
 ### How to Report
 
-**Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+**Email**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 
 **Subject Line**: `[SECURITY] BibleVerse Vulnerability Report`
 
@@ -211,7 +211,7 @@ We appreciate security researchers who help us improve BibleVerse security:
 ### Security Team
 
 - **Primary Contact**: Dr. Porkoláb Ádám
-- **Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Email**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 - **Response Time**: 48 hours maximum
 - **Languages**: Hungarian, English
 

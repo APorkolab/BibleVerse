@@ -17,7 +17,7 @@ Thank you for considering contributing to BibleVerse! This document outlines the
 
 ## 🤖 Code of Conduct
 
-This project adheres to a code of conduct adapted from the Contributor Covenant. By participating, you are expected to uphold this code. Please report unacceptable behavior to [adam@porkolab.hu](mailto:adam@porkolab.hu).
+This project adheres to a code of conduct adapted from the Contributor Covenant. By participating, you are expected to uphold this code. Please report unacceptable behavior to [ap@aporkolab.com](mailto:ap@aporkolab.com).
 
 ### Our Standards
 
@@ -365,7 +365,7 @@ Any other context or screenshots
 
 **Do not** create public GitHub issues for security vulnerabilities. Instead:
 
-1. Email security issues to [adam@porkolab.hu](mailto:adam@porkolab.hu)
+1. Email security issues to [ap@aporkolab.com](mailto:ap@aporkolab.com)
 2. Include detailed information about the vulnerability
 3. Provide steps to reproduce if possible
 4. Allow time for investigation and fix before public disclosure
@@ -442,8 +442,8 @@ Contributors are recognized in:
 
 - **General questions**: Create a GitHub discussion
 - **Bug reports**: Create a GitHub issue
-- **Security issues**: Email [adam@porkolab.hu](mailto:adam@porkolab.hu)
-- **Direct contact**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Security issues**: Email [ap@aporkolab.com](mailto:ap@aporkolab.com)
+- **Direct contact**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 
 ## 📄 License
 

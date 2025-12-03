@@ -160,7 +160,7 @@ For future versions, migration guides will be provided here.
 - **Documentation**: [docs/](./docs/)
 - **Issues**: [GitHub Issues](https://github.com/APorkolab/BibleVerse/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/APorkolab/BibleVerse/discussions)
-- **Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Email**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 
 ---
 

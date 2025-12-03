@@ -179,8 +179,8 @@ open coverage/index.html
 ### Environments
 
 - **Development**: `http://localhost:4200`
-- **Staging**: `https://staging-bibleverse.porkolab.hu`
-- **Production**: `https://bibleverse.porkolab.hu`
+- **Staging**: `https://staging-bibleverse.aporkolab.com`
+- **Production**: `https://bibleverse.aporkolab.com`
 
 ### CI/CD Pipeline
 
@@ -290,11 +290,11 @@ We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBU
 - **Documentation**: Check the [docs/](./docs/) directory
 - **Issues**: [GitHub Issues](https://github.com/APorkolab/BibleVerse/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/APorkolab/BibleVerse/discussions)
-- **Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Email**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 
 ### Commercial Support
 For enterprise support, custom development, or consulting services, contact:
-- **Email**: [adam@porkolab.hu](mailto:adam@porkolab.hu)
+- **Email**: [ap@aporkolab.com](mailto:ap@aporkolab.com)
 - **Website**: [https://pklab.hu](https://pklab.hu)
 
 ## 🙏 Acknowledgments
@@ -355,14 +355,14 @@ VAGY
 ## **3. Az alkalmazás indítása**
 
 - Mind a backend, mind a frontend az `npm start` paranccsal indítható.
-- A játék aktuális verziója a [https://bibleverse.porkolab.hu/] címen elérhető.
+- A játék aktuális verziója a [https://bibleverse.aporkolab.com/] címen elérhető.
 
 ## **4. Kapcsolattartási információ**
 
 ##### Webfejlesztés, design: Dr. Porkoláb Ádám
 
 - **A weboldallal és általános kérdésekkel, észrevételekkel kapcsolatban:**
-  Dr. Porkoláb Ádám (adam@porkolab.hu)
+  Dr. Porkoláb Ádám (ap@aporkolab.com)
 
 ## **5. Felhasznált technológiák**
 
@@ -435,14 +435,14 @@ OR
 ## **3. Start the application**
 
 - Both the backend and the frontend can be started with `npm start`.
-- The current version of the game is available at [https://bibleverse.porkolab.hu/].
+- The current version of the game is available at [https://bibleverse.aporkolab.com/].
 
 ## **4. Contact information**
 
 ##### Web development, design by Dr. Ádám Porkoláb
 
 - **About the website and general questions and comments:**
-  Dr. Ádám Porkoláb (adam@porkolab.hu)
+  Dr. Ádám Porkoláb (ap@aporkolab.com)
 
 ## **5. Technologies used**
 
